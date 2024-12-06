@@ -34,7 +34,7 @@ export default function Nav() {
   };
 
   return (
-    <nav class="bg-sky-800 flex justify-between items-center px-10 text-white">
+    <nav class="shadow-md flex justify-between items-center px-10 p-2 select-none">
       <ul class="container flex items-center p-3">
         <li class={`border-b-2 ${active("/")} mx-1.5 sm:mx-6`}>
           <a href="/">Home</a>
@@ -47,7 +47,7 @@ export default function Nav() {
         onClick={toggleTheme}
         class="px-4 py-2 text-white bg-blue-500 dark:bg-yellow-500 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
       >
-        {isDarkMode() ? "Switch to Light Mode" : "Switch to Dark Mode"}
+        {isDarkMode() ? "Light Mode" : "Dark Mode"}
       </button>
     </nav>
   );
