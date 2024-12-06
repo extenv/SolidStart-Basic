@@ -11,7 +11,7 @@ export default createHandler(() => (
           <link rel="icon" href="/favicon.ico" />
           {assets}
         </head>
-        <body>
+        <body class="bg-white text-[#07074D] dark:bg-gray-800 dark:text-white">
           <div id="app">{children}</div>
           {scripts}
         </body>
